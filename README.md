@@ -1,7 +1,7 @@
  TRAVEL API
  ==========
 
-sebuah api yang di gunakan untuk pemesanan bus, preject sederhana ini untuk menyelesaikan tugas dari [PESILAT]("https://pesilat.alkademi.id")
+sebuah api yang di gunakan untuk pemesanan bus, preject sederhana ini untuk menyelesaikan tugas dari [PESILAT](https://pesilat.alkademi.id)
 
 > api ini sudah sesuai dengan apa yang di perintahkan yaitu memiliki fitur : 
 - booking
