@@ -13,8 +13,9 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
       order_book.belongsTo(models.User);
 
-      order_book.hasMany(models.bus, {
+      order_book.hasOne(models.bus, {
         foreignKey: "bus_id",
+        as: "bus"
       })
     }
   }
@@ -23,10 +24,13 @@ module.exports = (sequelize, DataTypes) => {
     bus_id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
-    } ,
+    },
+    jurusan: DataTypes.STRING,
+    tujuan: DataTypes.STRING,
     jadwal: DataTypes.DATE
   }, {
     sequelize,
+    timestamps: false,
     modelName: 'order_book',
   });
   return order_book;

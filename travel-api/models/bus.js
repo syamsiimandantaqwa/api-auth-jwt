@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
       })
 
       bus.belongsTo(models.order_book, {
-        foreignKey: "bus_id"
+        foreignKey: "bus_id",
       });
     }
   }
@@ -29,6 +29,7 @@ module.exports = (sequelize, DataTypes) => {
     tarif: DataTypes.INTEGER
   }, {
     sequelize,
+    timestamps: false,
     modelName: 'bus',
   });
   return bus;

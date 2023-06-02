@@ -18,7 +18,10 @@ module.exports = (sequelize, DataTypes) => {
   }
   jurusan.init({
     nama: DataTypes.STRING,
-    jurusan_id: DataTypes.INTEGER
+    jurusan_id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+    }
   }, {
     sequelize,
     timestamps: false,

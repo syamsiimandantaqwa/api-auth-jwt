@@ -9,6 +9,12 @@ module.exports = {
       bus_id: {
         type: Sequelize.INTEGER
       },
+      jurusan: {
+        type: Sequelize.STRING,
+      },
+      tujuan: {
+        type: Sequelize.STRING
+      },
       jadwal: {
         type: Sequelize.DATE
       }

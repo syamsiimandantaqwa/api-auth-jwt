@@ -11,8 +11,12 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      bus_by_jurusan.belongsTo(models.bus)
-      bus_by_jurusan.belongsTo(models.jurusan)
+      bus_by_jurusan.belongsTo(models.bus, {
+        foreignKey: "bus_id"
+      })
+      bus_by_jurusan.belongsTo(models.jurusan, {
+        foreignKey: "jurusan_id"
+      })
 
     }
   }
@@ -24,6 +28,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   }, {
     sequelize,
+    timestamps: false,
     modelName: 'bus_by_jurusan',
   });
   return bus_by_jurusan;

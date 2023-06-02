@@ -16,11 +16,15 @@ module.exports = {
     {
       user_id: 1,
       bus_id: 2,
+      jurusan: "jakarta-semarang",
+      tujuan: "semarang",
       jadwal: '2023-06-30',
     },
     {
       user_id: 1,
       bus_id: 1,
+      jurusan: "jakarta-bandung",
+      tujuan: "depok",
       jadwal: '2023-05-30',
     }];
 
