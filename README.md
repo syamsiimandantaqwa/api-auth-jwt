@@ -32,7 +32,6 @@ panduan instalasi untuk mulai menggunakan api
 | GET | `/my-order` | mendapatkan data pesanan dari user yang sedang login |
 
 panduan untuk menggunakan api
-
 -----
 
 1. contoh pada saat menggunakan `/register` isikan body nya dengan :
